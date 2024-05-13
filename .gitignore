@@ -163,3 +163,4 @@ cython_debug/
 
 # NIX
 .nix-shell
+dump.rdb
