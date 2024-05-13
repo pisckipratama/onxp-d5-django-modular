@@ -19,3 +19,7 @@ build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = true
+
+
+[tool.pdm.scripts]
+dev = "pdm run src/manage.py runserver"
