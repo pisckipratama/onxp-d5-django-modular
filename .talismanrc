@@ -1,0 +1,8 @@
+fileignoreconfig:
+- filename: src/django_modular/settings.py
+  checksum: 9db87538cb638de6b4c5c42f10c8f753591780f2f975f20e6a9492d01fd9e763
+- filename: pdm.lock
+  checksum: d3ff75aa9456816dfb218a9f65383f860446df3d501b879fc8ee20b85c61100c
+- filename: shell.nix
+  checksum: 0fd7bd3c9338b8e2849e7cec74e081545b79cde030e77efe52c18ffdaee0f2e7
+version: ""

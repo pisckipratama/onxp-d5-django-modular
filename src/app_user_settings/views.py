@@ -4,5 +4,8 @@ from django.shortcuts import render
 
 def user_settings_view(request):
     name = "User Settings"
+    return render(request, 'app_user_settings/settings.html', {'name': name})
 
-    return render(request, 'template.html', {'name': name})
+def main_view(request):
+    name = "Dashboard User Settings"
+    return render(request, 'app_user_settings/index.html', {'name': name})

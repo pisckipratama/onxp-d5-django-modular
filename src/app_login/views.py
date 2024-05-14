@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 def login_view(request):
     name = "Login"
-    return render(request, 'template.html', {'name': name})
+    return render(request, 'app_login/index.html', {'name': name})

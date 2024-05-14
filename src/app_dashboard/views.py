@@ -5,4 +5,4 @@ from django.shortcuts import render
 def my_view(request):
     name = "Dashboard"
 
-    return render(request, 'template.html', {'name': name})    
+    return render(request, 'app_dashboard/index.html', {'name': name})
