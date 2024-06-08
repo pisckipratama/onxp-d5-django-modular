@@ -1,8 +1,14 @@
 fileignoreconfig:
 - filename: src/django_modular/settings.py
-  checksum: 9db87538cb638de6b4c5c42f10c8f753591780f2f975f20e6a9492d01fd9e763
-- filename: pdm.lock
-  checksum: d3ff75aa9456816dfb218a9f65383f860446df3d501b879fc8ee20b85c61100c
-- filename: shell.nix
-  checksum: 0fd7bd3c9338b8e2849e7cec74e081545b79cde030e77efe52c18ffdaee0f2e7
+  checksum: 57c9ef633643fb47e4df4c441eb5d91cce08ab6f6e9939697b62176eeb96da9f
+- filename: src/app_login/templates/app_login/index.html
+  checksum: a4b6f3b295d077408ddbaa70603fe316acf6f4687b791534b615ffab4f2b3ce1
+- filename: src/app_user_settings/templates/app_user_settings/index.html
+  checksum: 10dc4610e78eab9bc11b20cb726ab1f140e6ec14a8b67a4f483331408ed8d6c2
+- filename: src/app_user_settings/templates/app_user_settings/settings.html
+  checksum: c4fd674008b8e2d7fe121acca7ead1593b1b765ec2d475c8907c360bd3178855
+- filename: src/app_landing/templates/app_landing/about.html
+  checksum: a972e4ed08b6575041724f47c74401cde5427b0fadaaabdd4e399deb230bb968
+- filename: src/app_landing/templates/app_landing/index.html
+  checksum: c3743565b3aa720ce72917c53affed91fc02fc42f29c0142a095b04dede78586
 version: ""

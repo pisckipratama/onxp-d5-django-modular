@@ -22,7 +22,7 @@ pkgs.mkShell
 {
     nativeBuildInputs = with pkgs; [
         pkgs.git
-        nodejs_20
+        bun
         python312
         python312Packages.pip
         pkgs.pdm
