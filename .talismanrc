@@ -1,7 +1,5 @@
 threshold: medium
 fileignoreconfig:
 - filename: pdm.lock
-  checksum: 55f448253ad4fb191aa3159fc50b6232fe837a1a370f7311b9053d366fb4443d
-- filename: src/app_login/templates/app_login/index.html
-  checksum: 25d4fe080c2bbabd7be06500950dc978c3a7cef25bbc74e8882df289ff9423e4
+  checksum: f110ddaf0ceb59ccdfb71d17f7b99740cf08f60a652ce8c7e3b36994048dad3d
 version: ""

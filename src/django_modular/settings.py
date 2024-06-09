@@ -18,7 +18,7 @@ from pathlib import Path
 
 # Read Environment Variable
 env = environ.Env(
-    DEBUG=(bool, False),
+    DEBUG=(bool, True),
     SECRET_KEY=(str, "django-secretSECUREHOST"),
     POSTGRES_URL=(str, "localhost"),
     POSTGRES_PORT=(str, "5432"),
