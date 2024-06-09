@@ -10,7 +10,23 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+import os
+import environ
+
 from pathlib import Path
+
+
+# Read Environment Variable
+env = environ.Env(
+    DEBUG=(bool, False),
+    SECRET_KEY=(str, "django-secretSECUREHOST"),
+    POSTGRES_URL=(str, "localhost"),
+    POSTGRES_PORT=(str, "5432"),
+    POSTGRES_USER=(str, "postgres"),
+    POSTGRES_PASSWORD=(str, "password"),
+    POSTGRES_DB=(str, "postgres"),
+
+)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,10 +36,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-z5wn3ezu2j^$fg8*o1p&*#6zfqo8(97)p7$5e*(568am2%p3+%'
+SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env("DEBUG")
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
@@ -79,8 +95,12 @@ WSGI_APPLICATION = 'django_modular.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': env("POSTGRES_DB"),
+        'HOST': env("POSTGRES_URL"),
+        'PASSWORD': env("POSTGRES_PASSWORD"),
+        'USER': env("POSTGRES_USER"),
+        'PORT': env("POSTGRES_PORT")
     }
 }
 

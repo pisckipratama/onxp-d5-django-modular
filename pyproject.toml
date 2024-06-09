@@ -6,7 +6,10 @@ authors = [
     {name = "Piscki Pratama", email = "pisckipratama@gmail.com"},
 ]
 dependencies = [
-    "django>=5.0.5",
+    "django==5.0.5",
+    "django-environ==0.11.2",
+    "psycopg-binary==3.1.19",
+    "psycopg2-binary==2.9.9",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
